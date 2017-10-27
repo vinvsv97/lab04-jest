@@ -11,7 +11,7 @@ function greet(name){
  * It may have a few small bugs...
  */
 function invertCase(text) {
-  const LOWER_CASE = "abedefghijklmnoqprstuvwxyz";
+  const LOWER_CASE = "abcdefghijklmnoqprstuvwxyz";
   const UPPER_CASE = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
   let tempString = '';
@@ -22,11 +22,11 @@ function invertCase(text) {
       tempString += upper;
     }
     else { //is uppercase
-      let lower = LOWER_CASE [ LOWER_CASE.indexOf(char) ];
+      let lower = LOWER_CASE [ UPPER_CASE.indexOf(char) ];
       tempString += lower;
     }
   }
-  return text;
+  return tempString;
 }
 
 
